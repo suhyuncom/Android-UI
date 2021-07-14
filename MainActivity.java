@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         //webViewSetting();
     }
 
-    //웹뷰 기본 세팅, 실행부분
+    //웹뷰 기본 세팅, 실행부분..
     public void webViewSetting(){
         mWebView = (WebView) findViewById(R.id.webview);
         mWebView.getSettings().setJavaScriptEnabled(true); //javaScript 허용
