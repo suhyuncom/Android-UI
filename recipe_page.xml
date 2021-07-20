@@ -40,7 +40,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="6"
                     android:layout_gravity="center"
-                    android:background="@drawable/text_round"></EditText>
+                    android:background="@drawable/edittext_round"></EditText>
                 <Button
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
