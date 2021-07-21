@@ -4,12 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class CreateMemActivity extends AppCompatActivity {
+public class FindMemActivity extends AppCompatActivity {
 
-    //sns 연동, db 연동
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.create_mem_page);
+        setContentView(R.layout.find_mem_page);
     }
 }

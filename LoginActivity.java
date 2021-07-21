@@ -20,6 +20,10 @@ public class LoginActivity extends AppCompatActivity {
 
         EditText = (EditText) findViewById(R.id.loginId);
         EditText = (EditText) findViewById(R.id.loginPwd);
+
+        loginSetting();
+        createAcSetting();
+        forgetAcSetting();
     }
 
     public void loginSetting(){
@@ -33,21 +37,25 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void createAcSetting(){
-        Button = (Button) findViewById(R.id.login);
+        Button = (Button) findViewById(R.id.createMembtn);
         Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //회원가입
+                Intent intent = new Intent(LoginActivity.this, CreateMemActivity.class);
+                startActivity(intent);
             }
         });
     }
 
     public void forgetAcSetting(){
-        Button = (Button) findViewById(R.id.login);
+        Button = (Button) findViewById(R.id.findMembtn);
         Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //회원 정보 찾기
+                Intent intent = new Intent(LoginActivity.this, FindMemActivity.class);
+                startActivity(intent);
             }
         });
     }
