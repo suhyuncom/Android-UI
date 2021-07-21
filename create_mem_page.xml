@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="horizontal">
 
+    <!--db 구축 후 입력 정보 창 수정하기-->
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -84,14 +85,26 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:layout_marginTop="50dp">
                     <!--sns 로그인 버튼 추가-->
                     <ImageButton
-                        android:id="@+id/createMembtn"
-                        android:layout_width="150dp"
-                        android:layout_height="50dp" />
+                        android:id="@+id/kakaobtn"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="120dp"
+                        android:padding="0dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/facebook"/>
+                    <ImageButton
+                        android:id="@+id/googlebtn"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="50dp"
+                        android:padding="0dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/kakao"/>
                 </LinearLayout>
-
             </LinearLayout>
         </LinearLayout>
     </FrameLayout>
